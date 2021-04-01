@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>CC</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>139917877_456147522212251_586457817432808418_n.png</normaloff>139917877_456147522212251_586457817432808418_n.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="backupbutton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>510</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(122, 125, 113);
+font: 75 25pt &quot;TH Chakra Petch&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ลงชื่อ</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>440</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TH Chakra Petch</family>
+     <pointsize>25</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(252, 255, 249);
+font: 75 25pt &quot;TH Chakra Petch&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ตรวจสอบข้อมูลให้ถูกต้อง</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LaId_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>40</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TH Chakra Petch</family>
+     <pointsize>40</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(252, 255, 249);
+font: 75 40pt &quot;TH Chakra Petch&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ระบบเช็คชื่อ</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>431</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="LaId">
+      <property name="font">
+       <font>
+        <family>TH Chakra Petch</family>
+        <pointsize>20</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(252, 255, 249);
+font: 75 20pt &quot;TH Chakra Petch&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ชื่อพนักงาน</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="name">
+      <property name="styleSheet">
+       <string notr="true">font: 75 20pt &quot;TH Chakra Petch&quot;;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>431</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="LaPosition">
+      <property name="font">
+       <font>
+        <family>TH Chakra Petch</family>
+        <pointsize>20</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(252, 255, 249);
+font: 75 20pt &quot;TH Chakra Petch&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ตำแหน่ง</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Position">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ตำแหน่งการทำงานในบริษัท&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(47, 47, 47);
+font: 75 20pt &quot;TH Chakra Petch&quot;;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>กรุณาเลือกตำแหน่ง</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ประธาน</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>รองประธาน</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ที่ปรึกษาอาวุโส</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>กรรมการผู้จัดการ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ผู้จัดการสาขา</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>หัวหน้าแผนก</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>กรรมการ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>เลขานุการ</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>0</y>
+     <width>541</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(168, 47, 47);</string>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>431</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="LaId_3">
+      <property name="font">
+       <font>
+        <family>TH Chakra Petch</family>
+        <pointsize>20</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(252, 255, 249);
+font: 75 20pt &quot;TH Chakra Petch&quot;;</string>
+      </property>
+      <property name="text">
+       <string>รหัสพนักงาน</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="ID">
+      <property name="styleSheet">
+       <string notr="true">font: 75 20pt &quot;TH Chakra Petch&quot;;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>490</y>
+     <width>141</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="zx.qrc">:/newPrefix/139917877_456147522212251_586457817432808418_n.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>textBrowser</zorder>
+  <zorder>backupbutton</zorder>
+  <zorder>check</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>horizontalLayoutWidget_3</zorder>
+  <zorder>horizontalLayoutWidget_2</zorder>
+  <zorder>label</zorder>
+  <zorder>LaId_2</zorder>
+ </widget>
+ <resources>
+  <include location="zx.qrc"/>
+ </resources>
+ <connections/>
+</ui>
